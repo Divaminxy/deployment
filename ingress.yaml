@@ -2,13 +2,13 @@ apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
   name: app-ingress
-  namespace: piproject
+  namespace: agrilink
 spec:
   ingressClassName: nginx
   rules:
     - http:
         paths:
-          - path: /skillExchange
+          - path: /pi
             pathType: Prefix
             backend:
               service:
